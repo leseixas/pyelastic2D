@@ -9,7 +9,7 @@
         Institution:       MackGraphe - Graphene and Nanomaterials Research Center,
                            Mackenzie Presbyterian University
         Created:           29 August 2018
-        Last modification: 31 August 2018
+        Last modification: 01 September 2018
 
         To do list:        1. Calculate R^2
                            2. Calculate piezoelectric constant
@@ -17,6 +17,10 @@
 
 import sys, getopt
 import numpy as np
+
+def polynom(coeff,x,y):
+    return 0.5*coeff[0]x**2+0.5*coeff[1]*y**2+coeff[2]*x*y
+
 
 # function fit_elastic_energy
 def fit_elastic_energy(dft_data):
